@@ -1,0 +1,16 @@
+Package: RM.pwr
+Title: Calculate effective number of participant when repeating measurements
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Marc-André",
+           family = "Goulet",
+           role = c("aut", "cre"),
+           email = "magoulet93@gmail.com",
+           comment = c(ORCID = "0000-0001-9958-9182"))
+Description: This package applies the methodology of Goulet & Cousineau (2019) to statistical power analysis. It uses the functions of the package "pwr" and adjust the number of participants required to attain sufficient statistical power using the number of times the measurement is repeated and the intra-class correlation of these measures.
+License: GNU
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    pwr (>= 1.2-2)
+RoxygenNote: 7.0.2
