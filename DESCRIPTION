@@ -1,6 +1,6 @@
 Package: RM.pwr
 Title: Calculate effective number of participant when repeating measurements
-Version: 0.0.0.9000
+Version: 1.0.0.0000
 Authors@R: 
     person(given = "Marc-André",
            family = "Goulet",
