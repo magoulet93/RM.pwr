@@ -26,6 +26,20 @@ The function returns the effective number of participants to attain the specifie
 statistical power. You do not need to specify that n is NULL. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
 }
+\examples{
+# Calculating the effective sample size required for a Z test.
+# Intra-class correlation is .88 and number of replicated measurements is 2.
+
+RM.pwr.norm.test(
+ d = 0.0018651027, # Jenny wants to detect a Cohen's d of 0.0018651027
+ sig.level = .005,
+ power = .999,
+ alternative = "greater",
+ corr = .88,
+ m = 2
+)
+
+}
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.

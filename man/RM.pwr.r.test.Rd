@@ -26,6 +26,20 @@ The function returns the effective number of participants to attain the specifie
 statistical power. You do not need to specify that n is NULL. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
 }
+\examples{
+# Calculating the effective sample size for a simple regression.
+# Intra-class correlation is .4 and number of replicated measurements is 8.
+
+RM.pwr.r.test(
+ r = .2, # Want to detect a Pearson's correlation of .2
+ sig.level = .05,
+ power = .95,
+ alternative = "two.sided",
+ corr = .4,
+ m = 8
+)
+
+}
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.

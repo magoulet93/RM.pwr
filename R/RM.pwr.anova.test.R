@@ -21,6 +21,19 @@
 #' statistical power. You do not need to specify that n is NULL. For more details about this
 #' statistical power adjustment, see Goulet & Cousineau (2019).
 #'
+#' @examples
+#'# Calculating the effective sample size for a one-way anova with independant groups.
+#'# Intra-class correlation is .2 and number of replicated measurements is 75.
+#'
+#'RM.pwr.anova.test(
+#'  f = 0.2, # Want to detect a Cohen's f of 0.5
+#'  k = 4,
+#'  sig.level = .05,
+#'  power = .95,
+#'  .2,
+#'  m = 75
+#')
+#'
 #' @references Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 #' statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.
 #' DOI:10.1177/2515245919849434

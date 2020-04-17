@@ -26,6 +26,20 @@ The function returns the effective number of participants to attain the specifie
 statistical power. You do not need to specify that n is NULL. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
 }
+\examples{
+# Calculating the effective sample size required for a one proporition.
+# Intra-class correlation is .6 and number of replicated measurements is 5.
+
+RM.pwr.p.test(
+ h = .5, # Want to detect a Cohen's h of .5
+ sig.level = .01,
+ power = .80,
+ alternative = "two.sided",
+ corr = .6,
+ m = 5
+)
+
+}
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.

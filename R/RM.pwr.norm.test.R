@@ -25,6 +25,19 @@
 #' statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.
 #' DOI:10.1177/2515245919849434
 #'
+#' @examples
+#'# Calculating the effective sample size required for a Z test.
+#'# Intra-class correlation is .88 and number of replicated measurements is 2.
+#'
+#'RM.pwr.norm.test(
+#'  d = 0.0018651027, # Jenny wants to detect a Cohen's d of 0.0018651027
+#'  sig.level = .005,
+#'  power = .999,
+#'  alternative = "greater",
+#'  corr = .88,
+#'  m = 2
+#')
+#'
 #' @seealso \code{\link[pwr]{pwr.norm.test}}
 #'
 #' @import pwr

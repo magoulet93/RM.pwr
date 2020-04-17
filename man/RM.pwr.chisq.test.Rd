@@ -26,6 +26,20 @@ The function returns the effective number of participants to attain the specifie
 statistical power. You do not need to specify that n is NULL. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
 }
+\examples{
+# Calculating the effective sample size for a chi-square test.
+# Intra-class correlation is .3 and number of replicated measurements is 20.
+
+RM.pwr.chisq.test(
+ w = 0.4, # Want to detect a W of 0.4
+ df = 4,
+ sig.level = .05,
+ power = .90,
+ corr = .3,
+ m = 20
+)
+
+}
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.

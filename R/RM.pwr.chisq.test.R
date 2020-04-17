@@ -25,6 +25,19 @@
 #' statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.
 #' DOI:10.1177/2515245919849434
 #'
+#' @examples
+#'# Calculating the effective sample size for a chi-square test.
+#'# Intra-class correlation is .3 and number of replicated measurements is 20.
+#'
+#'RM.pwr.chisq.test(
+#'  w = 0.4, # Want to detect a W of 0.4
+#'  df = 4,
+#'  sig.level = .05,
+#'  power = .90,
+#'  corr = .3,
+#'  m = 20
+#')
+#'
 #' @seealso \code{\link[pwr]{pwr.chisq.test}}
 #'
 #' @import pwr

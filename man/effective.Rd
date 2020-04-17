@@ -22,6 +22,16 @@ effective number of participants base on the n1 provided in G*Power.
 The function returns the effective number of participants. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
 }
+\examples{
+# What is the effective number of participants if n1 = 100, intra-class correlation is .3 and
+# the number of replicated measurements is 20?
+effective(
+ n1=100,
+ corr=.2,
+ m = 20
+)
+
+}
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
 statistical power. Advances in Methods and Practices in Psychological Sciences, 2(3), 199-213.

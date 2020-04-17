@@ -27,6 +27,31 @@ the intra-class correlation of these measurements.
 The function returns the effective number of participants to attain the specified
 statistical power. You do not need to specify that n is NULL. For more details about this
 statistical power adjustment, see Goulet & Cousineau (2019).
+
+#' @examples
+# Calculating the effective sample size required for a one sample t-test
+# Intra-class correlation is .3 and number of replicated measurements is 20.
+RM.pwr.t.test(
+ d = .4, # Want to detect a Cohen's d of 0.4
+ sig.level = .05,
+ power = .80,
+ type = "one.sample",
+ alternative = "two.sided",
+ corr = .3,
+ m = 20
+)
+
+# Calculating the effective sample size required for a two sample paired t-test.
+# Intra-class correlation is .2 and number of replicated measurements is 100.
+RM.pwr.t.test(
+ d = .25, # Want to detect a Cohen's d of 0.25
+ sig.level = .05,
+ power = .95,
+ type = "paired",
+ alternative = "two.sided",
+ corr = .2,
+ m = 100
+)
 }
 \references{
 Goulet, M.A. & Cousineau, D. (2019). The power of replicated measures to increase
