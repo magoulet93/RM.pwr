@@ -22,7 +22,7 @@
 #' statistical power. You do not need to specify that n is NULL. For more details about this
 #' statistical power adjustment, see Goulet & Cousineau (2019).
 #'
-#'#' @examples
+#' @examples
 #'# Calculating the effective sample size required for a one sample t-test
 #'# Intra-class correlation is .3 and number of replicated measurements is 20.
 #'RM.pwr.t.test(
